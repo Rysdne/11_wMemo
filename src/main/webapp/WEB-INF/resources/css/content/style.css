@@ -1,0 +1,296 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+#content {
+	width: 100%;
+	position: relatives;
+	display: flex;
+	flex-direction: row;
+}
+
+aside {
+	width: 5vh;
+	padding-top: 10vh;
+	background-color: lightgray;
+	display: flex;
+	flex-direction: column;
+	float: left;
+}
+
+.aside_open {
+	width: 45vh;
+}
+
+#aside_sideMenu {
+	width: 5vh;
+	height: 100vh;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	background-color: dimgray;
+}
+
+#aside_sideMenu ul li {
+	margin-top: 0.5vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.aside_sideMenu_butt {
+	width: 4vh;
+	height: 4vh;
+	font-size: 3vh;
+	color: whitesmoke;
+	text-align: center;
+}
+
+.aside_sideMenu_butt:hover {
+	color: gray;
+}
+
+#aside_slide {
+	margin-left: 5vh;
+}
+
+#aside_option {
+	height: 5vh;
+	background-color: gray;
+}
+
+#aside_box {
+	background-color: lightgray;
+	flex-grow: 1;
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+/* --- listPart ------------------------------------------ */
+.ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	border-bottom: 1px solid lightgray;
+}
+
+#tBody:hover {
+	background-color: lightgray;
+}
+
+.hidden {
+	display: none;
+}
+
+/* --- recordPart ----------------------------------------- */
+#recordBox {
+	text-align: center;
+}
+
+#recordState {
+	color: dimgray;
+}
+
+#textWrapper {
+	margin: 0 auto;
+}
+
+.textbox {
+	width: 38vh;
+	background-color: whitesmoke;
+	margin: 0 auto;
+	padding: 3px 5px;
+	border: 1px solid #d3d3d3;
+	border-radius: 10px;
+	text-align: left;
+	overflow-y: auto;
+}
+
+/* -------------------------------------------------------- */
+#main_loginCover_back {
+	width: 10%;
+	height: 83vh;
+	background-color: dimgray;
+	z-index: 0;
+	display: flex;
+	position: absolute;
+	top: 17vh;
+	right: 2.5vh;
+}
+
+main {
+	padding-top: 10vh;
+	background-color: rgb(56, 56, 56);
+	flex-grow: 1;
+	float: left;
+}
+
+#main_memo {
+	margin-left: 3vh;
+	margin-right: 5vh;
+	margin-top: 1vh;
+	height: 89vh;
+	position: relative;
+}
+
+#main_memoHeader ul li {
+	width: 10vh;
+	height: 4vh;
+	margin-right: 0.5vh;
+	float: left;
+	background-color: sandybrown;
+	text-align: center;
+	line-height: 4vh;
+	border:2px dashed rgba(0,0,0,0.1);
+	border-bottom: 1px solid gray;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;	
+	box-sizing: border-box;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: rgb(53, 53, 53);
+}
+
+#main_memoHeader ul li:first-child {
+	margin-left: 3vh;
+	background-color: tomato;
+}
+
+#main_memoBody {
+	width: 100%;
+	background-color: whitesmoke;
+	top: 4vh;
+	padding: 4vh 0;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+}
+
+#form {
+	width: 90%;
+	height: 77vh;
+	clear: both;
+}
+
+#title {
+	width: 40%;
+	min-width: 200px;
+	height: 50px;
+	margin-bottom: 2vh;
+	border-style: none;
+	border-bottom: 2px solid lightgray;
+	background-color: rgba(0,0,0,0);
+	font-size: 2.5rem;
+}
+
+#title:focus {
+	outline: 0;
+}
+
+#subfolder {
+	width: 15%;
+	min-width: 100px;
+	height: 35px;
+	margin-left: 2vh;
+	margin-bottom: 2vh;
+	border-style: none;
+	border-bottom: 2px solid lightgray;
+	background-color: rgba(0,0,0,0);
+	font-size: 1rem;
+}
+
+#subfolder:focus {
+	outline: 0;
+}
+
+#input {
+	background-color: whitesmoke;
+	width: 100%;
+	height: 70vh;
+	overflow: auto;
+	font-size: 16pt;
+	outline: 2px dashed lightgray;
+}
+
+/* --- loginPart ------------------------------------------ */
+.aside_sideMenu_butt_disabled {
+	width: 4vh;
+	height: 4vh;
+	font-size: 3vh;
+	color: #919191;
+	text-align: center;
+}
+
+#form_frame {
+	width: 90%;
+	height: 77vh;
+	clear: both;
+}
+
+#title_disabled {
+	width: 40%;
+	min-width: 300px;
+	height: 50px;
+	margin-bottom: 2vh;
+	border-style: none;
+	border-bottom: 2px solid lightgray;
+	background-color: whitesmoke;
+	font-size: 2.5rem;
+}
+
+#postit_box {
+	width: 60vh;
+	height: 60vh;
+	margin: 0 auto;
+	background-image: url("/wMemo/img/postit.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+}
+
+#postit_login {
+	margin: 10vh 0;
+	margin-left: 13vh;
+	width: 40vh;
+	overflow:auto;
+}
+
+#postit_login th {
+	font-size:15pt;
+	padding-right:5px;
+}
+
+#postit_login a {
+	font-weight:bold;
+	color:rebeccapurple;
+}
+
+.login_input {
+	width: 15vh;
+	font-size:14pt;
+	border: 0;
+	border-bottom: 1px solid black;
+	background-color: rgba(0,0,0,0);
+}
+.login_input:focus {
+	background-color: rgba(0,0,0,0.1)	
+}
+.summit_butt {
+	width: 100px;
+	height: 50px;
+	background-color: rgba(0,0,0,0.1);
+	margin: 0 auto;
+	margin-left: 10px;
+	border:2px dashed black;
+	border-radius: 10px;
+	font-size: 15pt;
+	font-weight: bold;
+}
+
+/* -------------------------------------------------------- */
